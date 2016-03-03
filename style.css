@@ -770,9 +770,10 @@ div.art-headerobject
    margin-left: -230px;
    position: absolute;
    top: 0;
-   width: 366px;
+   /*width: 366px;*/
+   width: 40%;
    height: 260px;
-   background-image: url('images/header-object.png');
+   background-image: url('images/holdhands.jpg');
 }
 /* end HeaderObject */
 

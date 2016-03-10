@@ -775,6 +775,19 @@ div.art-headerobject
    height: 260px;
    background-image: url('images/holdhands.jpg');
 }
+div.art-headerobject-team
+{
+   display: block;
+   left: 56%;
+   margin-left: -230px;
+   position: absolute;
+   top: 0;
+   /*width: 366px;*/
+   width: 76%;
+   height: 316px;
+   margin-top: -41px;
+   background-image: url('images/groupshot.jpeg');
+}
 /* end HeaderObject */
 
 /* begin Logo */
@@ -941,7 +954,22 @@ div.art-block select
 {
    width:96%;
 }
-
+div.member-container 
+{
+   float: left;
+   width: 45%;
+   position: relative;
+}
+div.member-container>img 
+{
+   width: 30%;
+   float: left;
+}
+div.member-container>p 
+{
+   float: left;
+   width: 60%;
+}
 span.art-button-wrapper.hover>.art-button, span.art-button-wrapper.hover>a.art-button:link
 {
    color: #000000 !important;

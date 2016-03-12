@@ -1627,6 +1627,8 @@ span.art-postdateicon
    min-height:15px;
    display:inline-block;
    line-height: 1em;
+   width: auto!;
+   height: auto!;
 }
 
 span.art-postdateicon:after

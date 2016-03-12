@@ -405,6 +405,7 @@ li p, .art-postcontent li p, .art-blockcontent-body li p
    content: url('images/sheet_t.png');
    font-size: 0;
    background-image: url('images/sheet_b.png');
+   z-index: 1;
 }
 .art-sheet:after{
    clip:rect(auto, auto, auto, 982px);
@@ -565,6 +566,7 @@ ul.art-hmenu{
 
 .art-nav:before, .art-nav:after{
    background-image: url('images/nav.png');
+   z-index: 1;
 }
 .art-nav:before{
    right: 5px;
@@ -660,6 +662,7 @@ ul.art-hmenu>li:before
    width:1px;
    height: 42px;
    background: url('images/menuseparator.png') center center no-repeat;
+   z-index: 1;
 }
 
 ul.art-hmenu>li {
@@ -774,19 +777,21 @@ div.art-headerobject
    width: 40%;
    height: 260px;
    background-image: url('images/holdhands.jpg');
+
 }
 div.art-headerobject-team
 {
    display: block;
-   left: 56%;
+   left: 50%;
    margin-left: -230px;
    position: absolute;
    top: 0;
    /*width: 366px;*/
-   width: 76%;
-   height: 316px;
-   margin-top: -41px;
-   background-image: url('images/groupshot.jpeg');
+   width: 70%;
+   height: 260px;
+   margin-top: 0px;
+   background-repeat: no-repeat;
+   background-image: url('images/groupshot1.jpg');
 }
 /* end HeaderObject */
 

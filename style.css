@@ -28,15 +28,25 @@ ul.art-vmenu a
 .art-postcontent,
 .art-postcontent li,
 .art-postcontent table,
-.art-postcontent a,
-.art-postcontent a:link,
-.art-postcontent a:visited,
-.art-postcontent a.visited,
-.art-postcontent a:hover,
-.art-postcontent a.hovered
 {
    font-family: "Century Gothic",Arial, Helvetica, Sans-Serif;
 }
+
+.art-postcontent a,
+.art-postcontent a:link,
+.art-postcontent a:visited,
+.art-postcontent a:hover,
+{
+   font-family: Arial;
+   font-size: 10px;
+   letter-spacing: normal;
+   word-spacing: normal;
+   font-style: normal;
+   font-weight: normal;
+   text-decoration: underline;
+   color: #363F27;
+}
+
 
 .art-postcontent p
 {
@@ -247,25 +257,6 @@ body
    min-width: 1000px;
    color: #292B27;
    background-color: #B3B5AA;
-}
-
-.cleared
-{
-   display:block;
-   clear: both;
-   float: none;
-   margin: 0;
-   padding: 0;
-   border: none;
-   font-size: 0;
-   height:0;
-   overflow:hidden;
-}
-
-.reset-box
-{
-   overflow:hidden;
-   display:table;
 }
 
 form
@@ -861,6 +852,10 @@ div.art-logo
 
 /* begin Layout */
 .art-layout-wrapper
+.art-layout-wrapper a,
+.art-layout-wrapper a:link,
+.art-layout-wrapper a:visited,
+.art-layout-wrapper a:hover
 {
    position:relative;
    margin:0 auto 0 auto;
@@ -1682,192 +1677,6 @@ span.art-postemailicon:after
    display: inline-block;
 }/* end PostIcon, PostEmailIcon */
 
-/* begin PostIcon, PostEditIcon */
-span.art-postediticon
-{
-   background:url('images/postediticon.png') no-repeat left 0.5em;
-   padding-top:9px;
-   margin-top:-9px;
-   padding-left:21px;
-   min-height:18px;
-   display:inline-block;
-   line-height: 1em;
-}
-
-span.art-postediticon:after
-{
-   content: '.';
-   width: 1px;
-   visibility: hidden;
-   display: inline-block;
-}/* end PostIcon, PostEditIcon */
-
-/* begin PostBullets */
-.art-postcontent ol, .art-postcontent ul
-{
-   margin: 1em 0 1em 2em;
-   padding: 0;
-}
-
-.art-postcontent li
-{
-   font-size: 13px;
-   color: #41433D;
-   margin: 5px 0 0 -15px;
-   padding: 0 0 0 14px;
-}
-
-.art-postcontent li ol, .art-post li ul
-{
-   margin: 0.5em 0 0.5em 2em;
-   padding: 0;
-}
-
-.art-postcontent ol>li
-{
-   background: none;
-   padding-left: 0;
-   /* overrides overflow for "ul li" and sets the default value */
-  overflow: visible;
-}
-
-.art-postcontent ul>li
-{
-   background-image: url('images/postbullets.png');
-   background-repeat: no-repeat;
-   background-position: top left;
-   padding-left: 14px;
-   /* makes "ul li" not to align behind the image if they are in the same line */
-  overflow-x: visible;
-   overflow-y: hidden;
-}
-
-/* end PostBullets */
-
-/* begin PostQuote */
-blockquote,
-blockquote a, .art-postcontent blockquote a, .art-blockcontent blockquote a, .art-footer blockquote a,
-blockquote a:link, .art-postcontent blockquote a:link, .art-blockcontent blockquote a:link, .art-footer blockquote a:link,
-blockquote a:visited, .art-postcontent blockquote a:visited, .art-blockcontent blockquote a:visited, .art-footer blockquote a:visited,
-blockquote a:hover, .art-postcontent blockquote a:hover, .art-blockcontent blockquote a:hover, .art-footer blockquote a:hover
-{
-   color: #2F302C;
-   font-style: italic;
-   font-weight: normal;
-}
-
-/* Override native 'p' margins*/
-blockquote p,
-.art-postcontent blockquote p,
-.art-blockcontent blockquote p,
-.art-footer blockquote p
-{
-   margin: 0;
-}
-
-blockquote
-{
-   margin: 10px;
-   padding: 2px;
-   background-color: #D4D6D1;
-   margin-left: 50px;
-   padding-left: 35px;
-   background-image: url('images/postquote.png');
-   background-position: left top;
-   background-repeat: no-repeat;
-   /* makes block not to align behind the image if they are in the same line */
-  overflow: auto;
-   clear:both;
-}
-
-/* end PostQuote */
-
-/* begin PostMetadata, PostMetadataFooter */
-.art-postmetadatafooter
-{
-   position:relative;
-   z-index:1;
-   padding: 1px;
-   background-image: url('images/postmetadatafooter_bg.png');
-}
-/* end PostMetadata, PostMetadataFooter */
-
-/* begin PostIcons, PostFooterIcons */
-.art-postfootericons,
-.art-postfootericons a,
-.art-postfootericons a:link,
-.art-postfootericons a:visited,
-.art-postfootericons a:hover
-{
-   font-family: "Century Gothic",Arial, Helvetica, Sans-Serif;
-   font-size: 11px;
-   letter-spacing: 1px;
-   color: #3E403A;
-}
-
-.art-postfootericons
-{
-   padding: 1px;
-}
-
-.art-postfootericons a, .art-postfootericons a:link
-{
-   text-decoration: none;
-   color: #5A5D51;
-}
-
-.art-postfootericons a:visited, .art-postfootericons a.visited
-{
-   color: #5A5D51;
-}
-
-.art-postfootericons a:hover, .art-postfootericons a.hover
-{
-   text-decoration: underline;
-   color: #797E6D;
-}
-
-/* end PostIcons, PostFooterIcons */
-
-/* begin PostIcon, PostTagIcon */
-span.art-posttagicon
-{
-   background:url('images/posttagicon.png') no-repeat left 0.5em;
-   padding-top:9px;
-   margin-top:-9px;
-   padding-left:24px;
-   min-height:18px;
-   display:inline-block;
-   line-height: 1em;
-}
-
-span.art-posttagicon:after
-{
-   content: '.';
-   width: 1px;
-   visibility: hidden;
-   display: inline-block;
-}/* end PostIcon, PostTagIcon */
-
-/* begin PostIcon, PostCommentsIcon */
-span.art-postcommentsicon
-{
-   background:url('images/postcommentsicon.png') no-repeat left 0.5em;
-   padding-top:9px;
-   margin-top:-9px;
-   padding-left:24px;
-   min-height:18px;
-   display:inline-block;
-   line-height: 1em;
-}
-
-span.art-postcommentsicon:after
-{
-   content: '.';
-   width: 1px;
-   visibility: hidden;
-   display: inline-block;
-}/* end PostIcon, PostCommentsIcon */
 
 /* begin Footer */
 .art-footer
@@ -1884,18 +1693,6 @@ span.art-postcommentsicon:after
    padding: 15px;
    color: #151513;
    font-size: 11px;
-}
-
-.art-footer-body ul li
-{
-   font-size: 13px;
-   line-height: 125%;
-   color: #2C2E29;
-   margin: 0 0 0 13px;
-   padding: 0 0 0 10px;
-   background-image: url('images/footerbullets.png');
-   background-repeat: no-repeat;
-   background-position: top left;
 }
 
 .art-footer-body:before
@@ -1921,56 +1718,11 @@ span.art-postcommentsicon:after
    background-image: url('images/footer_b.png');
 }
 
-.art-footer:before
-{
-   left:0;
-   right:5px;
-   background-position: bottom left;
-}
-
-.art-footer:after
-{
-   right:0;
-   width:5px;
-   background-position: bottom right;
-}
-
-.art-footer-body .art-rss-tag-icon
-{
-   position: absolute;
-   left:   6px;
-   bottom:15px;
-   z-index:1;
-}
-
-.art-rss-tag-icon
-{
-   display: block;
-   background-image: url('images/rssicon.png');
-   background-position: center right;
-   background-repeat: no-repeat;
-   height: 30px;
-   width: 32px;
-   cursor: default;
-}
-
 .art-footer-text p
 {
    padding:0;
    margin:0;
    text-align: center;
-}
-
-.art-footer-body a,
-.art-footer-body a:link,
-.art-footer-body a:visited,
-.art-footer-body a:hover,
-.art-footer-body td, 
-.art-footer-body th,
-.art-footer-body caption
-{
-   color: #151513;
-   font-size: 11px;
 }
 
 .art-footer-text
@@ -1998,6 +1750,21 @@ span.art-postcommentsicon:after
    color: #434E31;
    text-decoration: underline;
 }
+/**** Copied from .art-page-footer because that one works
+.art-footer-body a,
+.art-footer-body a:link,
+.art-footer-body a:visited,
+.art-footer-body a:hover
+{
+   font-family: Arial;
+   font-size: 10px;
+   letter-spacing: normal;
+   word-spacing: normal;
+   font-style: normal;
+   font-weight: normal;
+   text-decoration: underline;
+   color: #363F27;
+}*/
 
 div.art-footer img
 {
